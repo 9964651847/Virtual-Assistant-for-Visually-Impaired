@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html style>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript">
+    </script>
+    <script>var synth = window.speechSynthesis;</script>
+
+    <style>
+        .speech {
+            border: 0px solid #DDD;
+            width: 1300px;
+            padding: 0;
+            margin-left: 40px;
+            text-align: left;
+            font-family: "Lucida Sans";
+            }
+            .speech input {
+                border: 1;
+                width: 240px;
+                display: inline-block;
+                height: 30px;
+            }
+            .speech img {
+                float: right;
+                width: 40px;
+            }
+    </style>
+<style>
+    
+.header {
+  overflow: hidden;
+  background-color: #01579b;
+  padding: 20px 10px;
+  margin:-10px;
+}
+
+.header a {
+  float: left;
+  color:#ffffff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color:#0288d1;
+  color: white;
+}
+
+.header a.active {
+  background-color:#0277bd;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.footer
+     {
+     overflow: hidden;
+     width: 100%;
+     height: 50px;
+     background-color:#263238;
+     color:white;
+     text-align: center;
+     padding: 20px 10px;
+     font-weight: bold;
+     position: floating;
+     margin: -10px;
+     margin-top: 0px;
+     }
+     .ftr{
+         background-color: black;
+         text-align: center;
+         margin-left:  -10px;
+         width: 100%;
+         height: 100%;
+         padding-top: -15px;
+         padding-right: 20px;
+     }
+</style>
+</head>
+
+<body bgcolor=#fafafa>
+ <div class="header">
+        <a href="#default" style ="padding-left: 40px; font-family: Lucida Sans; font-size: 40px;" class="logo">Python_VA</a>
+        <div class="header-right">
+          <a class="active" href="#home">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+
+      
+    <h1 style="font-family: Lucida Sans;"align="center">VIRTUAL ASSISTANT</h1>
+    <div class="speech" ><i>It understands your voice commands, searches news and knowledge sources, and summarizes and reads out content to you.</i></div>
+    <br /><i class="speech"><font color="#546e7a">This application is under deployment.</font></i>
+
+    <div class="speech">
+            <h3>
+                Press the <a href="#btn_query">Query</a> button to issue a voice query.
+                You might be prompted to allow microphone access.
+            </h3>
+            <p>You can issue voice queries of the following forms as of now.</p>
+            
+            <h3>And if you're getting bored !!</h3>
+            <ul>
+                <li>Here's a virtual friend that will listen to your talks and guess what !! It never gets bored.</li>
+
+            </ul>
+            <p>
+                <i>
+                    Note: The current version uses Wikipedia API for knowledge queries. There might be an
+                    occasional lengthy lag.
+                </i>
+            </p>
+    </div>
+    <div>
+          <input id="btn_query" type="button" onclick="window.loaction.href='hhtp://127.0.0.1:5000/index';" target="blank" value="Query"
+         style= " background-color: #01579b; 
+         border:none; 
+         color: white; 
+         padding: 10px 181px;
+         margin-left: -3px;
+         margin-right: 24px;
+         margin-bottom: 0px;
+         text-decoration: none; 
+         display: inline-block;
+         font-size: 16px;"/>
+
+         <input id="query" type="button" onclick="window.loaction.href='hhtp://127.0.0.1:5000/voice';" target="blank" value="VoiceNotes"
+         style= " background-color: #01579b; 
+         border: none; 
+         color: white; 
+         padding: 10px 180px;
+         margin-right: 24px;
+         margin-bottom: 0px;
+         text-decoration: none; 
+         display: inline-block;
+         font-size: 16px;"/>
+
+         <input id="medi" type="button" onclick="window.loaction.href='hhtp://127.0.0.1:5000/medi';" target="blank" value="DoctorBot"
+         style= " background-color: #01579b; 
+         border: none; 
+         color: white; 
+         padding: 10px 181px;
+         margin-right: 0px;
+         margin-bottom: 0px;
+         text-decoration: none; 
+         display: inline-block;
+         font-size: 16px;"/>
+         
+         <footer>
+         <div class="footer">
+             <p>&copy; 2023  Virtual Assistant. All Rights Reserved . </p>
+             <p><a href="#">Terms &Conditions</a> | <a href="#">Contact Us</a> | <a href="#">Privacy Policy </a></p>
+         </div>
+         <div class="footer">
+             <div class="ftr">
+                <div class="container">
+                        <div class="row">
+                            <div class="col l6 s12">
+                            <h5 class="white-text" style="font-family: Lucida Sans;">Team: Virtual Assistant.</h5>
+                            </div>
+                        </div>
+                </div>
+             </div>
+         </div>
+        </footer>
+    
+ </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+    .header {
+      overflow: hidden;
+      background-color: #01579b;
+      padding: 20px 10px;
+      margin:-10px;
+    }
+
+    .header a {
+      float: left;
+      color:#ffffff;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      background-color:#0288d1;
+      color: white;
+    }
+
+    .header a.active {
+      background-color:#0277bd;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+
+    </style>
+    </head>
+
+
+     <div class="header">
+            <a href="#default" style ="padding-left: 40px; font-family: Lucida Sans; font-size: 40px;" class="logo">Python_VA</a>
+            <div class="header-right">
+              <a href="index1.html">Home</a>
+              <a class="active" href="#contact">Contact</a>
+              <a href="about.html">About</a>
+            </div>
+     </div>
+
+<style>
+body {font-family: Lucida Sans;}
+* {box-sizing: border-box;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #039be5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #01579b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #0288d1;
+}
+.container {
+  border-radius: 5px;
+  background-color: #e3f2fd;
+  padding: 20px;
+}
+</style>
+</head>
+<body bgcolor= #e3f2fd>
+
+<h2 align="center">Contact Information</h2>
+<div class="container">
+  <form>
+    <label for="name">First Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Your name..">
+
+    <label for="">Phone_No</label>
+    <input type="text" id="lname" name="Phone_No" placeholder="Your Phone_No..">
+
+    <label for="Message">Message</label>
+    <textarea id="Message" name="Message" placeholder="Message Input.." style="height:160px"></textarea>
+    <div style="text-align:center">
+        <input type="submit" value="Submit"/></div>
+  </form>
+</div>
+</body>
+</html>
